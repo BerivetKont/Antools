@@ -7,6 +7,8 @@
     <title>
       antools
     </title>
+   <script src="https://www.w3schools.com/lib/w3.js">
+   </script>
     <link rel="stylesheet" href="antool.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -876,7 +878,7 @@
       </div>
       <!-- Section5: SlideShow -->
       <div class="slideshow">
-        <button class="slider">
+        <button onclick="myShow.previous()" class="slider">
           <svg class="slider_left" xmlns="http://www.w3.org/2000/svg" width="42"
           height="42" viewBox="0 0 24 24" fill="none" stroke="#8899a4" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="arcs">
@@ -885,6 +887,10 @@
           </svg>
         </button>
         <div class="image">
+          <img class="myslides" src="https://github.com/BerivetKont/Antools/blob/Images/richards.png?raw=true"
+          alt="Ronald Richards">
+          <img class="myslides" src="https://github.com/BerivetKont/Antools/blob/Images/richards.png?raw=true"
+          alt="Ronald Richards">
           <img class="myslides" src="https://github.com/BerivetKont/Antools/blob/Images/richards.png?raw=true"
           alt="Ronald Richards">
         </div>
@@ -896,8 +902,25 @@
             veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris
             id qui ad.
           </p>
-        </div>
-        <button class="slider">
+        </div> 
+     <div class="text">
+        <p style="line-height: 30px;">
+         
+           do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur
+           veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris
+           id qui ad.
+        </p>  
+</div> 
+     <div class="text">
+        <p style="line-height: 30px;">
+           Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit
+           do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat
+           do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur
+          
+        </p>  
+</div> 
+
+        <button onclick="myShow.next()" class="slider">
           <svg class="slider_right" xmlns="http://www.w3.org/2000/svg" width="42"
           height="42" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="arcs">
@@ -1016,6 +1039,10 @@
         </div>
       </div>
     </section>
+<script>
+myShow = w3.slideshow(".myslides", 0);
+myShow = w3.slideshow(".text", 0);
+</script>
   </body>
 
 </html>

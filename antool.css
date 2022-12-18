@@ -59,7 +59,7 @@ h2,h3 {
 /* Section 2:Main Page */
 .main-page {
   display:flex;
-  gap:265px;
+  gap:250px;
   width:112%;
 }
 .main-page_1 {
